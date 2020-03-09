@@ -1,5 +1,5 @@
 <?php
-$ToEmail = 'contato@imobes.com.br';
+$ToEmail = 'jakson.belloli@gmail.com';
 $EmailSubject = 'New answer for imobes website';
 	$mailheader = "From: ".$_POST["email"]."\r\n";
 		$mailheader .= "Reply-To: ".$_POST["email"]."\r\n";
