@@ -1,6 +1,6 @@
 <?php
-$ToEmail = 'nikunjk1993@gmail.com';
-$EmailSubject = 'User Contact Information';
+$ToEmail = 'contato@imobes.com.br';
+$EmailSubject = 'New answer for imobes website';
 	$mailheader = "From: ".$_POST["email"]."\r\n";
 		$mailheader .= "Reply-To: ".$_POST["email"]."\r\n";
 $mailheader .= "Content-type: text/html; charset=iso-8859-1\r\n";
@@ -19,13 +19,19 @@ $MESSAGE_BODY = '<table style=" background:#F4F4F4 ; text-align : center">
 	</tr>
 	<tr>
 		<td style="padding:10px;">
+			<b>Company Name:</b>
+		</td>
+		<td style="padding:10px;">'.$_POST["company_name"].'</td>
+	</tr>
+	<tr>
+		<td style="padding:10px;">
 			<b>E-mail:</b>
 		</td>
 		<td style="padding:10px;">'.$_POST["email"].'</td>
 	</tr>
 	<tr>
 		<td style="padding:10px;">
-			<b>Contact:</b>
+			<b>Phone:</b>
 		</td>
 		<td style="padding:10px;">'.$_POST["phone"].'</td>
 	</tr>
